@@ -3,21 +3,39 @@
   margin: 0;
   padding: 0;
 }
-
+/* PAGE SECTIONS */
 body {
   /* background-color: orangered; */
   color: #444;
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+  position: relative;
 }
-
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* Shorthand */
+  margin: 0 auto;
+}
 .main-header {
   background-color: #f7f7f7;
   padding: 5px 40px;
   margin-bottom: 60px;
+  /* height: 80px; */
 }
 
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
 .related {
   list-style: none;
 }
@@ -29,8 +47,9 @@ aside {
   padding-top: 50px;
   padding-bottom: 50px;
   padding: 50px 0;
+  width: 500px;
 }
-
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3,
@@ -63,21 +82,27 @@ h2 {
 h3 {
   font-size: 30px;
   font-family: sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h4 {
   font-size: 20px;
-
   text-transform: uppercase;
   text-align: center;
 }
 
 p {
   font-size: 22px;
-
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
 li {
   font-size: 20px;
   margin-bottom: 10px;
@@ -139,3 +164,36 @@ a:active {
 }
 
 /* LVHA */
+
+.post-img {
+  width: 800px;
+  height: auto;
+  /* margin: 100px; */
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* STYLING LIKE BUTTON */
+
+.like-button {
+  font-family: sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px 25px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
